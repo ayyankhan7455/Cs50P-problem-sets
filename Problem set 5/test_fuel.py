@@ -13,11 +13,11 @@ def test_convert_errors():
     with pytest.raises(ValueError):
         convert("cat/dog")
     with pytest.raises(ValueError):
-        convert("5/4")  # X > Y
+        convert("5/4") 
     with pytest.raises(ValueError):
         convert("-1/4")
     with pytest.raises(ZeroDivisionError):
-        convert("1/0")  # Y == 0
+        convert("1/0") 
 
 
 def test_gauge():
